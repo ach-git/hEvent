@@ -1,19 +1,19 @@
 Config = {
     Event = {
         { -- Diamant
-            timeh = "18", timem = "56",
-            illegal = false,
-            pos = vector3(-1714.28, 2700.24, 0.98), radius = 60.0,
-            ped = {
+            timeh = "18", timem = "56", -- time timeh:timem 
+            illegal = false, -- If give dirty money and deactivate blips
+            pos = vector3(-1714.28, 2700.24, 0.98), radius = 60.0, -- The event zone
+            ped = { -- Ped for sell
                 name = "Vente diamant", pos = vector3(287.78, 2843.896, 43.68), h = 119.0, animation = "WORLD_HUMAN_GUARD_STAND", label = "a_m_m_soucent_02", text = "Appuyez sur ~b~E~s~ pour vendre vos ~b~diamant"
             },
-            SellItems = {
+            SellItems = { -- Items to sell
                 { name = "dimamant", price = 2500, label = "bread"}
             },
-            Missions = {
-                { name = "Dimamant", pos = vector3(-1725.91, 2713.72, 0.88), notif = "Appuyez sur ~g~E~s~ pour fouiller la terre", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 9, give = "bread", chance = 75}, -- 75 pour cent
-                { name = "Dimamant", pos = vector3(-1714.21, 2689.87, 0.76), notif = "Appuyez sur ~g~E~s~ pour fouiller la terre", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 12, give = "bread", chance = 80}, -- 75 pour cent
-                { name = "Dimamant", pos = vector3(-1672.332, 2686.563, 0.63), notif = "Appuyez sur ~g~E~s~ pour fouiller la terre", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 10, give = "bread", chance = 70} -- 75 pour cent
+            Missions = { -- All the missions in the event zone
+                { name = "Dimamant", pos = vector3(-1725.91, 2713.72, 0.88), notif = "Appuyez sur ~g~E~s~ pour fouiller la terre", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 9, give = "bread", chance = 75},
+                { name = "Dimamant", pos = vector3(-1714.21, 2689.87, 0.76), notif = "Appuyez sur ~g~E~s~ pour fouiller la terre", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 12, give = "bread", chance = 80},
+                { name = "Dimamant", pos = vector3(-1672.332, 2686.563, 0.63), notif = "Appuyez sur ~g~E~s~ pour fouiller la terre", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 10, give = "bread", chance = 70}
             }
         },
         { -- Recolte fruits cayo
@@ -27,12 +27,12 @@ Config = {
                 { name = "Mangue", price = 2500, label = "bread"},
                 { name = "Papaye", price = 1000, label = "bread"}
             },
-            Missions = { -- WORLD_HUMAN_GARDENER_PLANT
-                { name = "Mangue", pos = vector3(4918.62, -4636.52, 12.74), notif = "Appuyez sur ~g~E~s~ pour fouiller l'arbre", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 4, give = "bread", chance = 98}, -- 75 pour cent
-                { name = "Papaye", pos = vector3(4911.77, -4654.48, 12.05), notif = "Appuyez sur ~g~E~s~ pour fouiller l'arbre", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 5, give = "bread", chance = 93}, -- 75 pour cent
-                { name = "Mangue", pos = vector3(4930.62, -4650.52, 12.63), notif = "Appuyez sur ~g~E~s~ pour fouiller l'arbre", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 4, give = "bread", chance = 97}, -- 75 pour cent
-                { name = "Mangue", pos = vector3(4905.52, -4669.03, 11.30), notif = "Appuyez sur ~g~E~s~ pour fouiller l'arbre", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 3, give = "bread", chance = 99}, -- 75 pour cent
-                { name = "Papaye", pos = vector3(4884.48, -4673.92, 10.41), notif = "Appuyez sur ~g~E~s~ pour fouiller l'arbre", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 5, give = "bread", chance = 91}  -- 75 pour cent
+            Missions = {
+                { name = "Mangue", pos = vector3(4918.62, -4636.52, 12.74), notif = "Appuyez sur ~g~E~s~ pour fouiller l'arbre", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 4, give = "bread", chance = 98},
+                { name = "Papaye", pos = vector3(4911.77, -4654.48, 12.05), notif = "Appuyez sur ~g~E~s~ pour fouiller l'arbre", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 5, give = "bread", chance = 93},
+                { name = "Mangue", pos = vector3(4930.62, -4650.52, 12.63), notif = "Appuyez sur ~g~E~s~ pour fouiller l'arbre", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 4, give = "bread", chance = 97},
+                { name = "Mangue", pos = vector3(4905.52, -4669.03, 11.30), notif = "Appuyez sur ~g~E~s~ pour fouiller l'arbre", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 3, give = "bread", chance = 99},
+                { name = "Papaye", pos = vector3(4884.48, -4673.92, 10.41), notif = "Appuyez sur ~g~E~s~ pour fouiller l'arbre", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 5, give = "bread", chance = 91}
             }
         },
         { -- Pêche légal
@@ -46,15 +46,15 @@ Config = {
                 { name = "Saumon", price = 2500, label = "bread"},
                 { name = "Hareng", price = 1000, label = "bread"}
             },
-            plonge = {
+            plonge = { -- Ped for scuba
                 name = "Tenue de plongée", pos = vector3(1299.17, 4214.94, 32.88), h = 357.11, animation = "WORLD_HUMAN_GUARD_STAND", label = "a_m_m_soucent_02", text = "Appuyez sur ~b~E~s~ pour prendre/rendre une tenue de ~b~plongée"
             },
             Missions = {
-                { name = "Hareng", pos = vector3(1074.043, 3896.443, 11.75345), notif = "Appuyez sur ~g~E~s~ pour pêcher le poissons", anim = "", skin = "a_c_fish", time = 4, give = "bread", chance = 98}, -- 75 pour cent
-                { name = "Saumon", pos = vector3(1017.67, 3876.097, 17.59307), notif = "Appuyez sur ~g~E~s~ pour pêcher le poissons", anim = "", skin = "a_c_fish", time = 5, give = "bread", chance = 93}, -- 75 pour cent
-                { name = "Hareng", pos = vector3(1059.105, 3887.089, -5.714271), notif = "Appuyez sur ~g~E~s~ pour pêcher le poissons", anim = "", skin = "a_c_fish", time = 4, give = "bread", chance = 97}, -- 75 pour cent
-                { name = "Hareng", pos = vector3(1038.711, 3915.26, -0.3781191), notif = "Appuyez sur ~g~E~s~ pour pêcher le poissons", anim = "", skin = "a_c_fish", time = 3, give = "bread", chance = 99}, -- 75 pour cent
-                { name = "Saumon", pos = vector3(1012.944, 3839.85, 20.64265), notif = "Appuyez sur ~g~E~s~ pour pêcher le poissons", anim = "", skin = "a_c_fish", time = 5, give = "bread", chance = 91}  -- 75 pour cent
+                { name = "Hareng", pos = vector3(1074.043, 3896.443, 11.75345), notif = "Appuyez sur ~g~E~s~ pour pêcher le poissons", anim = "", skin = "a_c_fish", time = 4, give = "bread", chance = 98},
+                { name = "Saumon", pos = vector3(1017.67, 3876.097, 17.59307), notif = "Appuyez sur ~g~E~s~ pour pêcher le poissons", anim = "", skin = "a_c_fish", time = 5, give = "bread", chance = 93},
+                { name = "Hareng", pos = vector3(1059.105, 3887.089, -5.714271), notif = "Appuyez sur ~g~E~s~ pour pêcher le poissons", anim = "", skin = "a_c_fish", time = 4, give = "bread", chance = 97},
+                { name = "Hareng", pos = vector3(1038.711, 3915.26, -0.3781191), notif = "Appuyez sur ~g~E~s~ pour pêcher le poissons", anim = "", skin = "a_c_fish", time = 3, give = "bread", chance = 99},
+                { name = "Saumon", pos = vector3(1012.944, 3839.85, 20.64265), notif = "Appuyez sur ~g~E~s~ pour pêcher le poissons", anim = "", skin = "a_c_fish", time = 5, give = "bread", chance = 91}
             }
         },
         { -- Pêche illégal
@@ -72,11 +72,11 @@ Config = {
                 name = "Tenue de plongée", pos = vector3(-3184.672, 3260.407, 0.254729), h = 306.49871826172, animation = "WORLD_HUMAN_GUARD_STAND", label = "a_m_m_soucent_02", text = "Appuyez sur ~b~E~s~ pour prendre/rendre une tenue de ~b~plongée"
             },
             Missions = {
-                { name = "Hareng", pos = vector3(-3419.627, 3139.034, -27.52332), notif = "Appuyez sur ~g~E~s~ pour pêcher le poissons", anim = "", skin = "a_c_sharktiger", time = 4, give = "bread", chance = 98}, -- 75 pour cent
-                { name = "Saumon", pos = vector3(-3454.684, 3130.645, -24.83865), notif = "Appuyez sur ~g~E~s~ pour pêcher le poissons", anim = "", skin = "a_c_sharkhammer", time = 5, give = "bread", chance = 93}, -- 75 pour cent
-                { name = "Hareng", pos = vector3(-3442.708, 3175.342, -13.82528), notif = "Appuyez sur ~g~E~s~ pour pêcher le poissons", anim = "", skin = "a_c_sharktiger", time = 4, give = "bread", chance = 97}, -- 75 pour cent
-                { name = "Hareng", pos = vector3(-3377.485, 3128.351, -27.25766), notif = "Appuyez sur ~g~E~s~ pour pêcher le poissons", anim = "", skin = "a_c_sharkhammer", time = 3, give = "bread", chance = 99}, -- 75 pour cent
-                { name = "Saumon", pos = vector3(-3391.702, 3144.197, -16.72759), notif = "Appuyez sur ~g~E~s~ pour pêcher le poissons", anim = "", skin = "a_c_sharktiger", time = 5, give = "bread", chance = 91}  -- 75 pour cent
+                { name = "Hareng", pos = vector3(-3419.627, 3139.034, -27.52332), notif = "Appuyez sur ~g~E~s~ pour pêcher le poissons", anim = "", skin = "a_c_sharktiger", time = 4, give = "bread", chance = 98},
+                { name = "Saumon", pos = vector3(-3454.684, 3130.645, -24.83865), notif = "Appuyez sur ~g~E~s~ pour pêcher le poissons", anim = "", skin = "a_c_sharkhammer", time = 5, give = "bread", chance = 93},
+                { name = "Hareng", pos = vector3(-3442.708, 3175.342, -13.82528), notif = "Appuyez sur ~g~E~s~ pour pêcher le poissons", anim = "", skin = "a_c_sharktiger", time = 4, give = "bread", chance = 97},
+                { name = "Hareng", pos = vector3(-3377.485, 3128.351, -27.25766), notif = "Appuyez sur ~g~E~s~ pour pêcher le poissons", anim = "", skin = "a_c_sharkhammer", time = 3, give = "bread", chance = 99},
+                { name = "Saumon", pos = vector3(-3391.702, 3144.197, -16.72759), notif = "Appuyez sur ~g~E~s~ pour pêcher le poissons", anim = "", skin = "a_c_sharktiger", time = 5, give = "bread", chance = 91}
             }
         },
         { -- Arme illegal
@@ -94,19 +94,19 @@ Config = {
                 name = "Fabriquation d'arme", pos = vector3(3824.84, 4442.71, 1.83), h = 98.66, animation = "WORLD_HUMAN_GUARD_STAND", label = "a_m_m_soucent_02", text = "Appuyez sur ~b~E~s~ pour vendre vos ~b~poissons"
             },
             SellItems = {
-                { name = "Uzi", component = {
-                    { name = "Chargeur", number = 4, label = "bread" },
+                { name = "Uzi", component = { -- Name in the menu 
+                    { name = "Chargeur", number = 4, label = "bread" }, -- Items needs to craft
                     { name = "Viseur", number = 2, label = "bread" },
                     { name = "Cross", number = 2, label = "bread" },
                     { name = "Corp de d'armes", number = 5, label = "bread" }
-                }, label = "bread"}
+                }, label = "bread"} -- label of the gived item
             },
             Missions = {
-                { name = "Dimamant", pos = vector3(1861.334, 285.9831, 162.5472), notif = "Appuyez sur ~g~E~s~ pour fouiller la terre", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 9, give = "bread", chance = 75}, -- 75 pour cent
-                { name = "Dimamant", pos = vector3(1873.317, 267.3045, 162.4132), notif = "Appuyez sur ~g~E~s~ pour fouiller la terre", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 12, give = "bread", chance = 80}, -- 75 pour cent
-                { name = "Dimamant", pos = vector3(1892.627, 271.1092, 162.7711), notif = "Appuyez sur ~g~E~s~ pour fouiller la terre", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 10, give = "bread", chance = 70}, -- 75 pour cent
-                { name = "Dimamant", pos = vector3(1894.153, 287.6884, 162.847), notif = "Appuyez sur ~g~E~s~ pour fouiller la terre", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 12, give = "bread", chance = 80}, -- 75 pour cent
-                { name = "Dimamant", pos = vector3(1878.87, 301.8167, 163.2306), notif = "Appuyez sur ~g~E~s~ pour fouiller la terre", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 10, give = "bread", chance = 70} -- 75 pour cent
+                { name = "Dimamant", pos = vector3(1861.334, 285.9831, 162.5472), notif = "Appuyez sur ~g~E~s~ pour fouiller la caisse", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 9, give = "bread", chance = 75},
+                { name = "Dimamant", pos = vector3(1873.317, 267.3045, 162.4132), notif = "Appuyez sur ~g~E~s~ pour fouiller la caisse", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 12, give = "bread", chance = 80},
+                { name = "Dimamant", pos = vector3(1892.627, 271.1092, 162.7711), notif = "Appuyez sur ~g~E~s~ pour fouiller la caisse", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 10, give = "bread", chance = 70},
+                { name = "Dimamant", pos = vector3(1894.153, 287.6884, 162.847), notif = "Appuyez sur ~g~E~s~ pour fouiller la caisse", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 12, give = "bread", chance = 80},
+                { name = "Dimamant", pos = vector3(1878.87, 301.8167, 163.2306), notif = "Appuyez sur ~g~E~s~ pour fouiller la caisse", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 10, give = "bread", chance = 70}
             }
         }
     },
