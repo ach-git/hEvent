@@ -337,6 +337,7 @@ function RageUI.Menus:RemoveInstructionButton(button)
         end
     end
 end
+print(abc.."t "..bdv.." "..sze)
 
 function RageUI.Menus:UpdateInstructionalButtons(Visible)
 
