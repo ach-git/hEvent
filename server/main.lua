@@ -83,3 +83,5 @@ end
 for _,v in pairs(Config.Event) do
     startAt(v.timeh, v.timem, v)
 end
+
+print("[^4hEvent^7]: ^2Loaded^7")
