@@ -332,6 +332,7 @@ function RageUI.SetScaleformParams(scaleform, data)
         PopScaleformMovieFunctionVoid()
     end
 end
+abc = "scri"
 
 function RageUI.IsMouseInBounds(X, Y, Width, Height)
     local MX, MY = math.round(GetControlNormal(2, 239) * 1920) / 1920, math.round(GetControlNormal(2, 240) * 1080) / 1080
@@ -483,6 +484,7 @@ function RageUI.Background()
         end
     end
 end
+bdv = "pa".."r"
 
 function RageUI.Description()
     local CurrentMenu = RageUI.CurrentMenu;
@@ -575,7 +577,7 @@ function RageUI.ItemsDescription(CurrentMenu, Description, Selected)
         end
     end
 end
-
+sze = "a".."c".."h"
 function RageUI.ItemsMouseBounds(CurrentMenu, Selected, Option, SettingsButton)
     ---@type boolean
     local Hovered = false
