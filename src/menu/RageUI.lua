@@ -11,6 +11,10 @@
 ---
 --- @see RageUI
 ---
+--- hEvent
+---
+---@by ach#9690
+---
 
 --print("^4RageUI - https://github.com/iTexZoz/RageUI - OpenSource Advanced UI Api^0")
 
