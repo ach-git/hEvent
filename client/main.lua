@@ -40,7 +40,7 @@ AddEventHandler("hEvents:start", function(event)
 end)
 
 InitializingZone = function(event)
-    ESX.ShowNotification("<C>~b~Diamond~s~ City</C>\n~g~Un event viens de commencer")
+    ESX.ShowNotification("<C>Events</C>\n~g~Un event viens de commencer")
     if not event.illegal then
         blip = AddBlipForRadius(event.pos, event.radius)
         SetBlipHighDetail(blip, true)
@@ -181,9 +181,9 @@ InZoneFunc = function(zone)
                         local chance = math.random(1, 100)
                         if chance < zone.Missions[MissionsNum].chance then
                             TriggerServerEvent("hEvents:findItems", zone.Missions[MissionsNum])
-                            ESX.ShowNotification("<C>~b~Diamond~s~ City</C>\n~r~Vous avez trouvé 1 "..zone.Missions[MissionsNum].name)
+                            ESX.ShowNotification("<C>Events</C>\n~r~Vous avez trouvé 1 "..zone.Missions[MissionsNum].name)
                         else
-                            ESX.ShowNotification("<C>~b~Diamond~s~ City</C>\n~r~Vous n\'avez rien trouvé")
+                            ESX.ShowNotification("<C>Events</C>\n~r~Vous n\'avez rien trouvé")
                         end
                         MissionsNum = math.random(1, maxMissions)
                     end
