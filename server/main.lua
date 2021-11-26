@@ -13,9 +13,9 @@ AddEventHandler("hEvents:sellItems", function(zone, item)
                 xPlayer.addMoney(item.price)
             end
             xPlayer.removeInventoryItem(item.label, 1)
-            xPlayer.showNotification("<C>~b~Diamond~s~ City</C>\n~g~Vous avez vendue "..item.name)
+            xPlayer.showNotification("<C>Events</C>\n~g~Vous avez vendue "..item.name)
         else
-            xPlayer.showNotification("<C>~b~Diamond~s~ City</C>\n~r~Vous n\'avez pas assez de "..item.name)
+            xPlayer.showNotification("<C>Events</C>\n~r~Vous n\'avez pas assez de "..item.name)
         end
     else
         DropPlayer("Kick reason: cheating")
@@ -30,7 +30,7 @@ AddEventHandler("hEvents:craftItems", function(zone, item)
             local count = xPlayer.getInventoryItem(v.label).count
 
             if count <= v.number then
-                xPlayer.showNotification("<C>~b~Diamond~s~ City</C>\n~r~Vous n\'avez pas assez de "..v.name)
+                xPlayer.showNotification("<C>Events</C>\n~r~Vous n\'avez pas assez de "..v.name)
                 return
             end
         end
@@ -38,7 +38,7 @@ AddEventHandler("hEvents:craftItems", function(zone, item)
             xPlayer.removeInventoryItem(v.label, 1)
         end
         xPlayer.addInventoryItem(item.label, 1)
-        xPlayer.showNotification("<C>~b~Diamond~s~ City</C>\n~g~Vous avez craft "..item.name)
+        xPlayer.showNotification("<C>Events</C>\n~g~Vous avez craft "..item.name)
     else
         DropPlayer("Kick reason: cheating")
     end
