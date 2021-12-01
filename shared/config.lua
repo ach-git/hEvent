@@ -65,8 +65,8 @@ Config = {
                 name = "Vente de poisson", pos = vector3(-168.77, 6144.67, 41.66), h = 74.5, animation = "WORLD_HUMAN_GUARD_STAND", label = "a_m_m_soucent_02", text = "Appuyez sur ~b~E~s~ pour vendre vos ~b~poissons"
             },
             SellItems = {
-                { name = "Requin", price = 2500, label = "bread"},
-                { name = "Requin marteau", price = 1000, label = "bread"}
+                { name = "Requin", price = 2500, label = "requin"},
+                { name = "Requin marteau", price = 1000, label = "requinm"}
             },
             plonge = {
                 name = "Tenue de plongée", pos = vector3(-3184.672, 3260.407, 0.254729), h = 306.49871826172, animation = "WORLD_HUMAN_GUARD_STAND", label = "a_m_m_soucent_02", text = "Appuyez sur ~b~E~s~ pour prendre/rendre une tenue de ~b~plongée"
@@ -99,7 +99,7 @@ Config = {
                     { name = "Viseur", number = 2, label = "viseur" },
                     { name = "Cross", number = 2, label = "cross" },
                     { name = "Corp d'armes", number = 5, label = "weaponc" }
-                }, label = "bread"} -- label of the gived item
+                }, label = "weapon_pitol"} -- label of the gived item
             },
             Missions = {
                 { name = "Viseur", pos = vector3(1861.334, 285.9831, 162.5472), notif = "Appuyez sur ~g~E~s~ pour fouiller la caisse", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 15, give = "viseur", chance = 60},
