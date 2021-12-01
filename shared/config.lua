@@ -1,7 +1,7 @@
 Config = {
     Event = {
         { -- Diamant
-            timeh = "17", timem = "00", -- time timeh:timem
+            timeh = "10", timem = "00", -- time timeh:timem
             illegal = false, -- If give dirty money and deactivate blips
             pos = vector3(-1714.28, 2700.24, 0.98), radius = 60.0, -- The event zone
             ped = { -- Ped for sell
@@ -81,17 +81,17 @@ Config = {
         },
         { -- Arme illegal
             timeh = "22", timem = "00",
-            illegal = true,
-            pos = vector3(1876.829, 289.0868, 162.7927), radius = 80.0,
+            illegal = false,
+            pos = vector3(487.2964, -3292.501, 6.069255), radius = 80.0,
             crate = {
-                vector3(1873.198, 269.5148, 162.249),
-                vector3(1892.268, 286.3971, 162.8485),
-                vector3(1877.933, 299.606, 162.8951),
-                vector3(1890.785, 270.8695, 162.7224),
-                vector3(1862.183, 283.7145, 162.2645)
+                vector3(503.4395, -3286.109, 5.089265),
+                vector3(464.2006, -3281.69, 5.089265),
+                vector3(488.5237, -3271.656, 5.089263),
+                vector3(469.4983, -3301.434, 5.089263),
+                vector3(486.0754, -3294.547, 5.089258)
             },
             ped = {
-                name = "Fabriquation d'arme", pos = vector3(3824.84, 4442.71, 1.83), h = 98.66, animation = "WORLD_HUMAN_GUARD_STAND", label = "a_m_m_soucent_02", text = "Appuyez sur ~b~E~s~ pour vendre vos ~b~poissons"
+                name = "Fabriquation d'arme", pos = vector3(3824.84, 4442.71, 1.83), h = 98.66, animation = "WORLD_HUMAN_GUARD_STAND", label = "a_m_m_soucent_02", text = "Appuyez sur ~b~E~s~ pour fabriquer des ~b~armes"
             },
             SellItems = {
                 { name = "Uzi", component = { -- Name in the menu
@@ -99,14 +99,14 @@ Config = {
                     { name = "Viseur", number = 2, label = "viseur" },
                     { name = "Cross", number = 2, label = "cross" },
                     { name = "Corp d'armes", number = 5, label = "weaponc" }
-                }, label = "weapon_pitol"} -- label of the gived item
+                }, label = "weapon_microsmg"} -- label of the gived item
             },
             Missions = {
-                { name = "Viseur", pos = vector3(1861.334, 285.9831, 162.5472), notif = "Appuyez sur ~g~E~s~ pour fouiller la caisse", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 15, give = "viseur", chance = 60},
-                { name = "Cross", pos = vector3(1873.317, 267.3045, 162.4132), notif = "Appuyez sur ~g~E~s~ pour fouiller la caisse", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 12, give = "cross", chance = 55},
-                { name = "Chargeur", pos = vector3(1892.627, 271.1092, 162.7711), notif = "Appuyez sur ~g~E~s~ pour fouiller la caisse", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 10, give = "chargeur", chance = 69},
-                { name = "Chargeur", pos = vector3(1894.153, 287.6884, 162.847), notif = "Appuyez sur ~g~E~s~ pour fouiller la caisse", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 12, give = "chargeur", chance = 49},
-                { name = "Corp d'armes", pos = vector3(1878.87, 301.8167, 163.2306), notif = "Appuyez sur ~g~E~s~ pour fouiller la caisse", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 10, give = "weaponc", chance = 64}
+                { name = "Viseur", pos = vector3(502.0677, -3285.93, 6.069265), notif = "Appuyez sur ~g~E~s~ pour fouiller la caisse", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 15, give = "viseur", chance = 60},
+                { name = "Cross", pos = vector3(465.4757, -3281.616, 6.069265), notif = "Appuyez sur ~g~E~s~ pour fouiller la caisse", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 12, give = "cross", chance = 55},
+                { name = "Chargeur", pos = vector3(488.5282, -3272.68, 6.069263), notif = "Appuyez sur ~g~E~s~ pour fouiller la caisse", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 10, give = "chargeur", chance = 69},
+                { name = "Chargeur", pos = vector3(470.7692, -3301.375, 6.069263), notif = "Appuyez sur ~g~E~s~ pour fouiller la caisse", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 12, give = "chargeur", chance = 49},
+                { name = "Corp d'armes", pos = vector3(486.0312, -3293.4, 6.069258), notif = "Appuyez sur ~g~E~s~ pour fouiller la caisse", anim = "CODE_HUMAN_MEDIC_TEND_TO_DEAD", time = 10, give = "weaponc", chance = 47}
             }
         }
     },
