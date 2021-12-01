@@ -37,7 +37,7 @@ AddEventHandler("hEvents:craftItems", function(zone, item)
         for _,v in pairs(item.component) do
             xPlayer.removeInventoryItem(v.label, 1)
         end
-        xPlayer.addInventoryItem(item.label, 1)
+        xPlayer.addWeapon(item.label, 60)
         xPlayer.showNotification("<C>Events</C>\n~g~Vous avez craft "..item.name)
     else
         DropPlayer("Kick reason: cheating")
