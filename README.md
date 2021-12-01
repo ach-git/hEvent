@@ -1,6 +1,6 @@
 # hEvent:
 
-hEvent est un script entièrement configurable fais par moi il y a quel que temps mais je vous le release 
+hEvent est un script entièrement configurable avec Systeme d'heure, de creation d'arme en quelque clique et plus encore
 
 Dépendence: RageUI V2 et ESX
 
